@@ -2,9 +2,9 @@
 #include <stdlib.h>
 
 void buggyFunction(int n) {
-    int *arr = malloc(n * sizeof(int));  // Bug: Memory allocated but not freed
+    int *arr = malloc(n * sizeof(int));  
     
-    for (int i = 0; i <= n; i++) {  // Bug: Accessing out of bounds (i <= n instead of i < n)
+    for (int i = 0; i <= n; i++) {  
         arr[i] = i * 2;
     }
 
@@ -14,13 +14,13 @@ void buggyFunction(int n) {
     }
     printf("\n");
 
-    // Missing: free(arr); // Memory leak
+    
 }
 
 int main() {
     int num;
     printf("Enter a number: ");
-    scanf("%d", num);  // Bug: Missing '&' before num (should be scanf("%d", &num))
+    scanf("%d", num);  
 
     buggyFunction(num);
 
