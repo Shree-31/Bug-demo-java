@@ -1,16 +1,16 @@
 def greet(name):
-print("Hello, " + name)  # IndentationError: Missing indentation
+print("Hello, " + name)  
 
 def add_numbers(a, b)
-    return a + b  # SyntaxError: Missing colon after function definition
+    return a + b 
 
 def divide(a, b):
-    return a / b  # Potential ZeroDivisionError if b is 0
+    return a / b
 
 numbers = [1, 2, 3]
-print(numbers[5])  # IndexError: List index out of range
+print(numbers[5]) 
 
-print("The result is: " + 10)  # TypeError: Cannot concatenate str and int
+print("The result is: " + 10)  
 
-if name == "Alice":  # NameError: 'name' is not defined
+if name == "Alice":  
     print("Welcome, Alice!")
